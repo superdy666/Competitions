@@ -18,7 +18,7 @@
 # 3.特征工程：
   + 时间变量：星期几、小时。  
   随机选取了一些网格ID，观测他们一周中的每天每个小时的车流量，发现夜间0点至凌晨5点，车辆数非常少，而晚上7点至9点车流量可以达到一个顶峰，这种现象基本同我们的认知一致。而有一些例外的是，周五/周六的夜间0~1点的车流量也很多，大约是某些区域，人们习惯于夜生活导致。如下图所示：  
-  ![](https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/hour.png)
+  ![](https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/hour2.png)
   + 空间变量：网格ID
     + 将能源车、非能源车分别观测，发现差异较大。
     + 同时，发现各个网格间的差异也很大。某些网格的车流量几乎为零，试图通过给Label网格，在模型中进行识别，但是效果不好，因此在最后对这些网格的预测值进行手动调整。
