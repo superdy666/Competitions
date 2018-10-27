@@ -1,4 +1,3 @@
-https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/eCar.png
 # 1.比赛目标：
   预测2017.3.13~2017.3.26期间的上海市100个网格的每天早9点~晚22点的车流量
   
@@ -21,7 +20,7 @@ https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/eCar.p
   ![](https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/hour.png)
   + 空间变量：网格ID
     + 将能源车、非能源车分别观测，发现差异较大。
-    + 同时，发现各个网格间的差异也很大。
+    + 同时，发现各个网格间的差异也很大。某些网格的车流量几乎为零，试图通过给Label网格，在模型中进行识别，但是效果不好，因此在最后对这些网格的预测值进行手动调整。
     + 能源车：![](https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/eCar.png)
     + 非能源车：![](https://github.com/superdy666/Competitions/blob/master/BOT_traffic_volume/rCar.png)
   + 早晚高峰：早7~9点、晚5~7点
